@@ -58,7 +58,7 @@
     border-radius: 3px;
     display: flex;
     align-items: center;
-    transition: max-heigth 05s;
+    transition: max-height 0.5s;
     overflow: hidden;
 }
 
@@ -96,6 +96,7 @@ form p a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .btnField   button {
@@ -113,5 +114,5 @@ form p a {
 
 .inputGroup {
     height: 250px;
-    
+
 }
