@@ -1,5 +1,9 @@
 :root{
     --color-fondogris: #D0D0D0;
+    --color-fondoForm: #2C2F35;
+    --color-letra: white;
+    --color-fondoInput: #515966;
+    --color-verde: #04bd7d;
 }
 
 *{
@@ -18,4 +22,92 @@
     align-items: center;
     justify-content: center;
 
+}
+
+.formContent {
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--color-fondoForm);
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.formContent h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: var(--color-letra);
+    position: relative;
+}
+
+.formContent h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: var(--color-verde);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.inputField{
+    background-color: var(--color-fondoInput);
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-heigth 05s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+     color: var(--color-letra);
+}
+
+input ::placeholder {
+    color: var(--color-letra);
+}
+
+.inputField i {
+    margin-left: 15px;
+    color: var(--color-verde);
+}
+
+form p {
+    color: var(--color-letra);
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    color: var(--color-verde);
+    margin: 5px;
+
+}
+
+.btnField{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnField   button {
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: var(--color-verde);
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    
 }
